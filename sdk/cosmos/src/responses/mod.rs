@@ -6,7 +6,6 @@ mod create_collection_response;
 mod create_stored_procedure_response;
 mod create_trigger_response;
 mod create_user_defined_function_response;
-mod delete_document_response;
 mod delete_stored_procedure_response;
 mod delete_trigger_response;
 mod delete_user_defined_function_response;
@@ -18,14 +17,12 @@ mod list_stored_procedures_response;
 mod list_triggers_response;
 mod list_user_defined_functions_response;
 mod query_documents_response;
-mod replace_document_response;
 mod replace_stored_procedure_response;
 
 pub use create_collection_response::CreateCollectionResponse;
 pub use create_stored_procedure_response::CreateStoredProcedureResponse;
 pub use create_trigger_response::CreateTriggerResponse;
 pub use create_user_defined_function_response::CreateUserDefinedFunctionResponse;
-pub use delete_document_response::DeleteDocumentResponse;
 pub use delete_stored_procedure_response::DeleteStoredProcedureResponse;
 pub use delete_trigger_response::DeleteTriggerResponse;
 pub use delete_user_defined_function_response::DeleteUserDefinedFunctionResponse;
@@ -42,5 +39,4 @@ pub use query_documents_response::{
     QueryDocumentsResponse, QueryDocumentsResponseDocuments, QueryDocumentsResponseRaw,
     QueryResponseMeta, QueryResult,
 };
-pub use replace_document_response::ReplaceDocumentResponse;
 pub use replace_stored_procedure_response::ReplaceStoredProcedureResponse;
