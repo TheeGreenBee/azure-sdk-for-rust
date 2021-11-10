@@ -28,7 +28,7 @@
 //!         client,
 //!         &client_id,
 //!         &client_secret,
-//!         "https://management.azure.com/",
+//!         &["https://management.azure.com/"],
 //!         &tenant_id,
 //!     )
 //!     .await?;
@@ -53,3 +53,4 @@ pub use errors::Error;
 pub mod refresh_token;
 pub mod token_credentials;
 mod traits;
+pub use traits::{BearerToken, ExtExpiresIn, RefreshToken};

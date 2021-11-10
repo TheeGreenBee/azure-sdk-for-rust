@@ -9,7 +9,6 @@
 mod create_or_replace_trigger_builder;
 mod create_or_replace_user_defined_function_builder;
 mod create_stored_procedure_builder;
-mod delete_document_builder;
 mod delete_stored_procedure_builder;
 mod delete_trigger_builder;
 mod delete_user_defined_function_builder;
@@ -21,13 +20,11 @@ mod list_stored_procedures_builder;
 mod list_triggers_builder;
 mod list_user_defined_functions_builder;
 mod query_documents_builder;
-mod replace_document_builder;
 mod replace_stored_procedure_builder;
 
 pub use create_or_replace_trigger_builder::CreateOrReplaceTriggerBuilder;
 pub use create_or_replace_user_defined_function_builder::CreateOrReplaceUserDefinedFunctionBuilder;
 pub use create_stored_procedure_builder::CreateStoredProcedureBuilder;
-pub use delete_document_builder::DeleteDocumentBuilder;
 pub use delete_stored_procedure_builder::DeleteStoredProcedureBuilder;
 pub use delete_trigger_builder::DeleteTriggerBuilder;
 pub use delete_user_defined_function_builder::DeleteUserDefinedFunctionBuilder;
@@ -39,5 +36,4 @@ pub use list_stored_procedures_builder::ListStoredProceduresBuilder;
 pub use list_triggers_builder::ListTriggersBuilder;
 pub use list_user_defined_functions_builder::ListUserDefinedFunctionsBuilder;
 pub use query_documents_builder::QueryDocumentsBuilder;
-pub use replace_document_builder::ReplaceDocumentBuilder;
 pub use replace_stored_procedure_builder::ReplaceStoredProcedureBuilder;
