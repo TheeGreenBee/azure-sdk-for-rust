@@ -213,7 +213,7 @@ impl DocumentClient {
                 let next_state = response
                     .continuation_token
                     .clone()
-                    .map(|ct| State::Continuation(ct))
+                    .map(State::Continuation)
                     .unwrap_or_else(|| State::Done);
 
                 Some((Ok(response), next_state))
